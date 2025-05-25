@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: composite-material-api
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: uvicorn material_api:app --host 0.0.0.0 --port 8000
